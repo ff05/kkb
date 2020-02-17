@@ -1,4 +1,4 @@
-<template> <h1>Ik ben een discard</h1></template>
+<template></template>
 
 <script>
 export default {
