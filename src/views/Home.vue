@@ -45,7 +45,6 @@ const recipes = gql`
                 id
             }
             instructions
-            amount
         }
     }
 `
