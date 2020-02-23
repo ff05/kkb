@@ -1,0 +1,39 @@
+/* ==========================================================================
+   Config - Font sizes
+
+   This file is exclusively intended for setting up variables
+   Never add styles directly to this file
+   ========================================================================== */
+$font-sizes: (
+    title: (
+        h1: 54px,
+        h2: 44px,
+        h3: 32px,
+        h4: 24px,
+        h5: 20px,
+        h6: 16px
+    ),
+    title-mobile: (
+        h1: 40px,
+        h2: 30px,
+        h3: 24px,
+        h4: 20px,
+        h5: 16px,
+        h6: 12px
+    ),
+    content: (
+        intro: 24px,
+        body: 17px
+    ),
+    content-mobile: (
+        intro: 20px,
+        body: 15px
+    ),
+    button: (
+        small: 14px,
+        medium: 15px,
+        large: 18px,
+    ),
+    text-link: 16px,
+    text-link-mobile: 15px
+);

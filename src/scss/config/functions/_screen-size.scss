@@ -1,0 +1,11 @@
+/* ==========================================================================
+   Config - Screen size access
+
+   This file is exclusively intended for accessing variable maps
+   Never add styles directly to this file
+   ========================================================================== */
+@function screen-size($screen-size: null, $screen-size-group: null) {
+    @if ($screen-size != null) {
+        @return deep-get($key: $screen-size, $level: $screen-size-group, $map: $screen-sizes);
+    }
+}

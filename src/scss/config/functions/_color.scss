@@ -1,0 +1,11 @@
+/* ==========================================================================
+   Config - Colors access
+
+   This file is exclusively intended for accessing variable maps
+   Never add styles directly to this file
+   ========================================================================== */
+@function color($color: null, $color-group: null) {
+    @if ($color != null) {
+        @return deep-get($key: $color, $level: $color-group, $map: $colors);
+    }
+}

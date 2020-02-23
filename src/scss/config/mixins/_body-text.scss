@@ -1,0 +1,19 @@
+@mixin body-text {
+    color: color(primary, text);
+
+    font-size: font-size(body, content);
+    font-weight: font-weight(light);
+    // TODO: Family: Frutiger
+
+    line-height: line-height(body, content);
+}
+
+@mixin body-text--inverted {
+    color: color(inverted, text);
+
+    font-size: font-size(body, content);
+    font-weight: font-weight(light);
+    // TODO: Family: Frutiger
+
+    line-height: line-height(body, content);
+}

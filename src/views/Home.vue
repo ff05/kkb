@@ -1,16 +1,34 @@
 <template>
-    <div>
-        <section v-if="recipes">
-            <ul>
-                <li v-for="recipe in recipes" :key="recipe.id" class="recipe">
-                    <recipe-card :recipe="recipe"></recipe-card>
-                </li>
-            </ul>
-        </section>
-        <h2 v-else>
-            Loading...
-        </h2>
-    </div>
+    <main>
+        <div class="inner">
+            <section v-if="recipes">
+                <ul class="flex-container">
+                    <li
+                        v-for="recipe in recipes"
+                        :key="recipe.id"
+                        class="recipe"
+                    >
+                        <recipe-card :recipe="recipe"></recipe-card>
+                    </li>
+                    <li
+                        v-for="recipe in recipes"
+                        :key="recipe.id"
+                        class="recipe"
+                    >
+                        <recipe-card :recipe="recipe"></recipe-card>
+                    </li>
+                    <li
+                        v-for="recipe in recipes"
+                        :key="recipe.id"
+                        class="recipe"
+                    >
+                        <recipe-card :recipe="recipe"></recipe-card>
+                    </li>
+                </ul>
+            </section>
+            <h2 v-else>Loading...</h2>
+        </div>
+    </main>
 </template>
 
 <script>
@@ -84,4 +102,19 @@ export default {
 }
 </script>
 
-<style></style>
+<style lang="scss">
+@import '../assets/styles.scss';
+main {
+    padding-top: 40px;
+}
+.recipe {
+    @media (min-width: $screen-size-mobile) {
+        width: 50%;
+    }
+    @media (min-width: $screen-size-tablet) {
+        width: 33.333333%;
+    }
+    padding: 10px;
+    list-style-type: none;
+}
+</style>

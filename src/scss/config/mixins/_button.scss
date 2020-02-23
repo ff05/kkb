@@ -1,0 +1,97 @@
+@mixin button-base {
+    display: inline-block;
+    padding: spacing(sm) spacing(md);
+
+    border-radius: 2px;
+
+    border: none;
+
+    text-align: center;
+
+    text-transform: uppercase;
+
+    white-space: nowrap;
+    vertical-align: middle;
+
+    user-select: none;
+    cursor: pointer;
+
+    transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
+
+    &:focus {
+        outline: 0;
+    }
+
+    &:disabled {
+        opacity: .5;
+
+        pointer-events: none;
+    }
+}
+
+@mixin button($size: medium) {
+    font-size: font-size($size, button);
+    font-weight: font-weight(medium);
+}
+
+@mixin button-primary($size: medium) {
+    @include button($size);
+
+    background-color: color(link-cta, functional);
+
+    color: color(inverted, text);
+
+    &:hover,
+    &:active {
+        background-color: color(dark, brand-primary);
+    }
+}
+
+@mixin button--inverted($size: medium) {
+    @include button($size);
+
+    background-color: color('white');
+
+    color: color(brand, text);
+
+    &:hover,
+    &:active {
+        background-color: color(dark, brand-primary);
+
+        color: color('white');
+    }
+}
+
+@mixin button--disabled($size: medium) {
+    @include button($size);
+
+    background-color: color(disabled, functional);
+
+    color: color(darkstone, brand-secondary);
+}
+
+@mixin button--danger($size: medium) {
+    @include button($size);
+
+    background-color: color(danger, functional);
+
+    color: color(inverted, text);
+
+    &:hover,
+    &:active {
+        background-color: color(danger-hover, functional);
+    }
+}
+
+@mixin button--success($size: medium) {
+    @include button($size);
+
+    background-color: color(success, functional);
+
+    color: color(inverted, text);
+
+    &:hover,
+    &:active {
+        background-color: color(success-hover, functional);
+    }
+}

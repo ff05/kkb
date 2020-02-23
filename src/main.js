@@ -1,4 +1,6 @@
 import Vue from 'vue'
+import 'normalize.css'
+import './assets/styles.scss'
 import { ApolloClient } from 'apollo-client'
 import { HttpLink } from 'apollo-link-http'
 import { InMemoryCache } from 'apollo-cache-inmemory'

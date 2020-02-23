@@ -1,0 +1,19 @@
+@mixin intro-text {
+    color: color(primary, text);
+
+    font-size: font-size(intro, content);
+    font-weight: font-weight(regular);
+    // TODO: Family: Garamond
+
+    line-height: line-height(intro, content);
+}
+
+@mixin intro-text--inverted {
+    color: color(inverted, text);
+
+    font-size: font-size(intro, content);
+    font-weight: font-weight(regular);
+    // TODO: Family: Garamond
+
+    line-height: line-height(intro, content);
+}

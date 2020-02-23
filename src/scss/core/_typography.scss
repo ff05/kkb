@@ -1,0 +1,69 @@
+/* ==========================================================================
+   Core - Typography
+   ========================================================================== */
+
+/* Headings
+   ========================================================================== */
+@import '../_config.scss';
+
+/* General
+   ========================================================================== */
+* {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+html,
+body {
+    color: color(primary, text);
+    font-size: font-size(body, content);
+    font-family: font(base);
+
+    line-height: line-height(body, content);
+}
+
+/* Headings
+   ========================================================================== */
+h1 {
+    @include h1;
+}
+
+h2 {
+    @include h2;
+}
+
+h3 {
+    @include h3;
+}
+
+h4 {
+    @include h4;
+}
+
+h5 {
+    @include h5;
+}
+
+h6 {
+    @include h6;
+}
+
+
+/* Bodycopy
+   ========================================================================== */
+p {
+    margin: 1em 0;
+
+    + h1,
+    + h2,
+    + h3,
+    + h4,
+    + h5,
+    + h6 {
+        margin-top: 4.8rem;
+    }
+}
+
+label {
+    @include label-light;
+}

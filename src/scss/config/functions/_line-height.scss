@@ -1,0 +1,15 @@
+/* ==========================================================================
+   Config - Line heights access
+
+   This file is exclusively intended for accessing variable maps
+   Never add styles directly to this file
+   ========================================================================== */
+@function line-height($line-height: null, $line-height-group: null) {
+    @if ($line-height != null) {
+        @return deep-get($key: $line-height, $level: $line-height-group, $map: $line-heights);
+    }
+}
+
+@function calculate-line-height($font-size, $line-height) {
+    @return $line-height / $font-size;
+}

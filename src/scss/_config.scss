@@ -1,0 +1,9 @@
+/* ==========================================================================
+   Config
+
+   This file is exclusively intended for aggregating non-outputting scss functionality
+   Never add styles directly to this file
+   ========================================================================== */
+@import 'config/variables/_all.scss';
+@import 'config/functions/_all.scss';
+@import 'config/mixins/_all.scss';

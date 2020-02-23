@@ -1,0 +1,51 @@
+/* ==========================================================================
+   Core - Base
+   ========================================================================== */
+
+/* Box model
+   ========================================================================== */
+@import '../_config.scss';
+
+/* Box model
+   ========================================================================== */
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+/* Html & body
+   ========================================================================== */
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    height: 100%;
+}
+
+@page {
+    margin: 1.6cm;
+}
+
+body {
+    height: 100%;
+    min-height: 100%;
+    min-width: screen-size(sm);
+
+    background-color: $white;
+
+    @include print {
+        position: relative;
+
+        height: auto;
+        min-height: auto;
+        min-width: auto;
+    }
+}
+
+main {
+    display: block; // Fix for IE11
+}

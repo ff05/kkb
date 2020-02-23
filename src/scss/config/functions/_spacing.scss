@@ -1,0 +1,11 @@
+/* ==========================================================================
+   Config - Spacings access
+
+   This file is exclusively intended for accessing variable maps
+   Never add styles directly to this file
+   ========================================================================== */
+@function spacing($spacing: null, $spacing-group: null) {
+    @if ($spacing != null) {
+        @return deep-get($key: $spacing, $level: $spacing-group, $map: $spacings);
+    }
+}

@@ -1,0 +1,56 @@
+/* ==========================================================================
+   Config - Colors
+
+   This file is exclusively intended for setting up variables
+   Never add styles directly to this file
+   ========================================================================== */
+
+$white: #FFFFFF;
+$black: #000000;
+
+$colors: (
+    brand-primary: (
+        light: #003399,
+        dark: #000066,
+        background: #D7E6F7
+    ),
+    text: (
+        primary: #4C433D,
+        brand: #003399,
+        inverted: $white
+    ),
+    brand-secondary: (
+        'skyblue': #009EE0,
+        midblue: #4F90C8,
+        'lightblue': #97C1E3,
+        dove: #E7ECEB,
+        darkstone: #A89F96,
+        sandstone: #D5CEB5,
+        turqoise: #00BFB3,
+        'teal': #007396,
+        'salmon': #EA635C,
+        'orange': #F69C00,
+        lemon: #E0E27C,
+        shark: #23252B
+    ),
+    functional: (
+        link-cta: #4066B3,
+        success: #00BFB3,
+        warning: #F69C00,
+        danger: #EA635C,
+        disabled: #D5D5D5,
+        form-label: #001F49,
+        success-hover: #00857C,
+        danger-hover: #C72F27,
+        form-disabled: #E6E5EA,
+        form-disabled-border: #CDCDCD
+    ),
+    greys: (
+        dark: #322D29,
+        default: #ABABAB,
+        light: #D5D5D5,
+        off-white: #F2F0EE,
+    ),
+    'white': $white,
+    'black': $black
+);

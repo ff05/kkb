@@ -1,0 +1,18 @@
+/* ==========================================================================
+   Config - Mixins
+
+   This file is exclusively intended for aggregating mixins
+   Never add styles directly to this file
+   ========================================================================== */
+@import '_button.scss';
+@import '_body-text.scss';
+@import '_intro-text.scss';
+@import '_text-link.scss';
+@import '_icon-link.scss';
+@import '_icon-text.scss';
+@import '_headings.scss';
+@import '_media-queries.scss';
+@import '_shadow.scss';
+@import '_label-light.scss';
+@import '_table.scss';
+@import '_container.scss';

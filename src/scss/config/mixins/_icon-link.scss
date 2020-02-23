@@ -1,0 +1,13 @@
+@mixin icon-link {
+    @include icon-text;
+
+    color: color(link-cta, functional);
+    font-size: font-size(text-link);
+    font-weight: font-weight(light);
+    // TODO Family: Frutiger
+
+    // The text that needs to be underlined should be inside a span
+    & > span {
+        border-bottom: 1px solid currentColor;
+    }
+}

@@ -1,0 +1,39 @@
+@mixin table-row($isUneven: false, $background-color: color('dove', brand-secondary)) {
+    background-color: $background-color;
+
+    transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
+
+    @if ($isUneven == true) {
+        background-color: color('white');
+    }
+}
+
+@mixin table-row-clickable($isUneven: false) {
+    @include table-row($isUneven);
+
+    cursor: pointer;
+
+    &:hover {
+        background-color: color('background', brand-primary);
+    }
+}
+
+@mixin table-cell {
+    @include body-text;
+
+    max-width: 200px;
+    padding: spacing(sm) spacing(xs);
+
+    background: inherit;
+}
+
+@mixin table-head {
+    @include body-text;
+
+    padding: spacing(xs) spacing(xs) spacing(sm) spacing(xs);
+
+    color: color(dark, brand-primary);
+    font-weight: font-weight('bold');
+    text-align: left;
+    vertical-align: bottom;
+}

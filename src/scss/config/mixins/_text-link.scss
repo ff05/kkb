@@ -1,0 +1,27 @@
+@mixin text-link {
+    display: inline-block;
+
+    border-bottom: 1px solid currentColor;
+
+    color: color(link-cta, functional);
+
+    font-size: font-size(text-link);
+    font-weight: font-weight(light);
+    // TODO Family: Frutiger
+
+    line-height: line-height(text-link);
+}
+
+@mixin text-link--inverted {
+    display: inline-block;
+
+    border-bottom: 1px solid currentColor;
+
+    color: color(inverted, text);
+
+    font-size: font-size(text-link);
+    font-weight: font-weight(light);
+    // TODO Family: Frutiger
+
+    line-height: line-height(text-link);
+}

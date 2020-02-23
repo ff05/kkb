@@ -1,0 +1,25 @@
+input,
+select,
+textarea {
+    border-radius: 0;
+
+    color: inherit;
+
+    appearance: none;
+
+    &::placeholder {
+        color: inherit;
+        font-size: inherit;
+    }
+
+    &::-ms-expand,
+    &::-ms-clear {
+        display: none;
+    }
+
+    &:not([class=DateInput_input__focussed]) {
+        &:focus {
+            outline: 1px solid color('lightblue', brand-secondary);
+        }
+    }
+}

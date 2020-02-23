@@ -1,0 +1,11 @@
+/* ==========================================================================
+   Config - Font weights access
+
+   This file is exclusively intended for accessing variable maps
+   Never add styles directly to this file
+   ========================================================================== */
+@function font-weight($font-weight: null, $font-weight-group: null) {
+    @if ($font-weight != null) {
+        @return deep-get($key: $font-weight, $level: $font-weight-group, $map: $font-weights);
+    }
+}

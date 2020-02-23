@@ -1,10 +1,10 @@
 <template>
     <div>
-        <h1>Voeg een recept toe</h1>
+        <h1 :class="{ [$style.red]: isRed }">Voeg een recept toe</h1>
         <form @submit.prevent="formSubmit">
             <p class="form-section">
                 <label for="name">Naam:</label>
-                <input name="name" type="text" />
+                <input name="name" type="text" required />
             </p>
             <p class="form-section">
                 <label for="instructions">Bereidingswijze:</label>
@@ -13,14 +13,18 @@
                     name="instructions"
                     rows="5"
                     cols="33"
+                    required
                 ></textarea>
             </p>
             <p class="form-section">
                 <label for="image">Afbeelding:</label>
-                <input name="image" type="file" />
+                <input name="image" type="file" required />
             </p>
             <p class="form-section">
-                <button type="submit">
+                <button
+                    class="button-base-root button-root button-contained button-containedPrimary"
+                    type="submit"
+                >
                     Voeg toe
                 </button>
             </p>
@@ -30,6 +34,9 @@
 
 <script>
 export default {
+    data: () => ({
+        isRed: true
+    }),
     methods: {
         formSubmit: () => {
             console.log('ha')
@@ -38,4 +45,8 @@ export default {
 }
 </script>
 
-<style></style>
+<style module>
+.red {
+    color: red;
+}
+</style>

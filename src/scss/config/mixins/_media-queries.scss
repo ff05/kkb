@@ -1,0 +1,30 @@
+@mixin mobile {
+    @media (max-width: screen-size(sm)) {
+        @content;
+    }
+}
+
+@mixin tablet-and-up {
+    @media (min-width: screen-size(sm)) {
+        @content;
+    }
+}
+
+@mixin desktop-and-up {
+    @media (min-width: screen-size(md)) {
+        @content;
+    }
+}
+
+@mixin print {
+    @media print {
+        @content;
+        overflow: hidden;
+    }
+}
+
+@mixin hide-on-print {
+    @media print {
+        display: none;
+    }
+}

@@ -1,0 +1,5 @@
+@mixin label-light {
+    @include body-text;
+
+    color: color(link-cta, functional);
+}

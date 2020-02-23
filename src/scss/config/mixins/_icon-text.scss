@@ -1,0 +1,6 @@
+@mixin icon-text {
+    display: inline-flex;
+    align-items: baseline;
+
+    line-height: line-height(text-link);
+}
